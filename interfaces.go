@@ -4,13 +4,13 @@ import (
 	"fmt"
 )
 
-type Geometria interface {
+type geometria interface {
 	area() float64
 	perimetro() float64
 }
 
-func Medidas(g Geometria) {
-	fmt.Println(g)
+func Medidas(g geometria) {
+	fmt.Println("Medidas:", g)
 	fmt.Printf("Area: %.2f\n", g.area())
 	fmt.Printf("Perímetro: %.2f\n", g.perimetro())
 }
